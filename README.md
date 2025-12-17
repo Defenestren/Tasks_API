@@ -1,25 +1,24 @@
 # Tasks API
 
-Simple REST API developed with Python and FastAPI as a learning project.
+API REST desarrollada con **Python y FastAPI** como proyecto personal para practicar y consolidar fundamentos de desarrollo backend.
 
-The goal of this project is to practice backend fundamentals such as API design, data validation, routing and basic automated testing.
+El proyecto implementa una gestión básica de tareas, con una estructura clara, endpoints simples y tests automatizados.
 
-## Features
+---
 
-- Retrieve task list
-- Create new tasks
-- Input validation using Pydantic models
-- In-memory fake database
-- Basic automated tests with pytest
+## Funcionalidades
 
-## Tech stack
+- Listado de tareas
+- Creación de tareas
+- Validación de datos mediante modelos
+- Almacenamiento en memoria (fake DB)
+- Tests automatizados con pytest
 
-- Python
-- FastAPI
-- Pytest
+---
 
-## Project structure
+## Estructura del proyecto
 
+<pre>
 asks_API/
 ├── main.py
 ├── routers/
@@ -32,27 +31,66 @@ asks_API/
 │ └── test_tasks.py
 ├── requirements.txt
 └── README.md
+</pre>
 
 
-## Run locally
+---
 
-Create and activate a virtual environment:
+## Tecnologías utilizadas
+
+- Python
+- FastAPI
+- Pytest
+- Uvicorn
+
+---
+
+## Instalación y ejecución
+
+### 1. Clonar el repositorio
 
 ```bash
+git clone https://github.com/Defenestren/Tasks_API.git
+cd Tasks_API
+
+
+Crear y activar entorno virtual
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+# Windows
+venv\Scripts\activate
 
 
-Install dependencies:
-
+Instalar dependencias
 pip install -r requirements.txt
 
 
-Run the API:
-
+Ejecutar la aplicación
 uvicorn main:app --reload
 
 
-Run tests:
+Documentación interactiva (Swagger):
+
+http://127.0.0.1:8000/docs
+
+
+```
+
+```bash
+Tests
+
+Los tests están implementados con pytest.
+
+Para ejecutarlos:
 
 pytest
+
+```
+
+---
+
+Notas
+
+Proyecto realizado con fines formativos, enfocado en aprender buenas prácticas básicas de estructura, testing y desarrollo de APIs backend con Python.
+
+
+
