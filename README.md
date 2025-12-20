@@ -1,17 +1,22 @@
 # Tasks API
 
-API REST desarrollada con **Python y FastAPI** como proyecto personal para practicar y consolidar fundamentos de desarrollo backend.
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-green)
+![Tests](https://img.shields.io/badge/tests-pytest-success)
+![Status](https://img.shields.io/badge/status-learning_project-informational)
 
-Este proyecto implementa una API sencilla para la gestión de tareas, con estructura clara, validación de datos y tests automatizados.
+API REST desarrollada con **Python y FastAPI** como proyecto personal para consolidar fundamentos de desarrollo backend.
+
+Proyecto enfocado en estructura clara, validación de datos y tests automatizados, siguiendo buenas prácticas básicas de diseño de APIs.
 
 ---
 
 ## 🚀 Funcionalidades
 
-- Listar tareas
-- Crear tareas
+- Listado de tareas
+- Creación de tareas
 - Validación de datos con Pydantic
-- Almacenamiento en memoria (fake database)
+- Persistencia en memoria (fake database)
 - Tests automatizados con pytest
 - Documentación automática con Swagger UI
 
@@ -31,8 +36,6 @@ Tasks_API/
 │ └── test_tasks.py
 ├── requirements.txt
 └── README.md
-
-
 ---
 
 ## 🛠️ Tecnologías utilizadas
@@ -45,81 +48,67 @@ Tasks_API/
 
 ---
 
-## ▶️ Cómo ejecutar en local
+## ▶️ Ejecución en local
 
-1. **Clonar el repositorio**
+### 1️⃣ Clonar el repositorio
 ```bash
 git clone https://github.com/Marcial-Godes/Tasks_API.git
 cd Tasks_API
-
-Crear y activar un entorno virtual
-
-python -m venv venv
-
-
-Windows
-
-venv\Scripts\activate
-
-
-Linux/macOS
-
-source venv/bin/activate
-
-
-Instalar dependencias
-
-pip install -r requirements.txt
-
-
-Ejecutar la API
-
-uvicorn main:app --reload
-
-
-La API estará disponible en:
-
-http://127.0.0.1:8000
-
-
-Documentación interactiva de Swagger UI:
-
-http://127.0.0.1:8000/docs
 ```
 
-
-## 🧪 Tests
-
-2. **Los tests están implementados con pytest.**
-   
-Para ejecutarlos:
-
+### 2️⃣ Crear y activar entorno virtual
 ```bash
-os tests están implementados con pytest.
-Para ejecutarlos:
+python -m venv venv
 
-pytest
+Windows
+venv\Scripts\activate
 
+Linux / macOS
+source venv/bin/activate
+```
 
-Incluyen casos básicos como:
+### 3️⃣ Instalar dependencias
+```bash
+pip install -r requirements.txt
+```
 
-Obtener tareas cuando no hay ninguna
+### 4️⃣ Ejecutar la API
+```bash
+uvicorn main:app --reload
 
-Crear una tarea correctamente
+La API estará disponible en:
+http://127.0.0.1:8000
+
+Swagger UI:
+http://127.0.0.1:8000/docs
 ```
 
 ---
 
-## 🎯 Objetivo del proyecto
+### 🧪 Tests
+```bash
+Tests implementados con pytest.
+Ejecutar tests:
+pytest
+```
+Casos cubiertos:
 
-Este proyecto es de aprendizaje y práctica, orientado a reforzar:
+API sin tareas iniciales
+
+Creación correcta de una tarea
+
+---
+
+### 🎯 Objetivo del proyecto
+
+Proyecto con fines formativos, orientado a practicar:
 
 Diseño de APIs REST
 
-Organización de proyecto backend
+Organización de un proyecto backend
 
 Validación de datos
 
 Testing automatizado básico
 
-No está pensado para producción.
+No orientado a producción.
