@@ -1,76 +1,78 @@
-Tasks API – FastAPI Backend Project
+# Tasks API
 
-Proyecto personal desarrollado con Python y FastAPI para practicar y consolidar fundamentos de desarrollo backend.
+API REST desarrollada con **Python y FastAPI** como proyecto personal para practicar y consolidar fundamentos de desarrollo backend.
 
-Se trata de una API REST sencilla para la gestión de tareas, orientada al aprendizaje práctico: estructura de proyecto, validación de datos y tests automatizados.
+Este proyecto implementa una API sencilla para la gestión de tareas, con estructura clara, validación de datos y tests automatizados.
 
-🚀 Características
+---
 
-API REST para gestión de tareas
+## 🚀 Funcionalidades
 
-Operaciones básicas:
+- Listar tareas
+- Crear tareas
+- Validación de datos con Pydantic
+- Almacenamiento en memoria (fake database)
+- Tests automatizados con pytest
+- Documentación automática con Swagger UI
 
-Listar tareas
+---
 
-Crear tareas
+## 🗂️ Estructura del proyecto
 
-Validación de datos con Pydantic
-
-Almacenamiento temporal con fake database (en memoria)
-
-Tests básicos automatizados con pytest
-
-Documentación automática con Swagger UI
-
-🗂️ Estructura del proyecto
 Tasks_API/
 ├── main.py
 ├── routers/
-│   └── tasks.py
+│ └── tasks.py
 ├── models/
-│   └── task.py
+│ └── task.py
 ├── db/
-│   └── fake_db.py
+│ └── fake_db.py
 ├── tests/
-│   └── test_tasks.py
+│ └── test_tasks.py
 ├── requirements.txt
 └── README.md
 
 
-Estructura mínima, clara y pensada para aprendizaje backend.
+---
 
-🛠️ Tecnologías utilizadas
+## 🛠️ Tecnologías utilizadas
 
-Python
+- **Python**
+- **FastAPI**
+- **Pydantic**
+- **Pytest**
+- **Uvicorn**
 
-FastAPI
+---
 
-Pydantic
+## ▶️ Cómo ejecutar en local
 
-Pytest
-
-Uvicorn
-
-▶️ Ejecución en local
-
-Clonar el repositorio:
-
-git clone https://github.com/TU_USUARIO/Tasks_API.git
+1. **Clonar el repositorio**
+```bash
+git clone https://github.com/Marcial-Godes/Tasks_API.git
 cd Tasks_API
 
-
-Crear y activar entorno virtual:
+Crear y activar un entorno virtual
 
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
 
 
-Instalar dependencias:
+Windows
+
+venv\Scripts\activate
+
+
+Linux/macOS
+
+source venv/bin/activate
+
+
+Instalar dependencias
 
 pip install -r requirements.txt
 
 
-Ejecutar la aplicación:
+Ejecutar la API
 
 uvicorn main:app --reload
 
@@ -80,38 +82,43 @@ La API estará disponible en:
 http://127.0.0.1:8000
 
 
-Documentación interactiva:
+Documentación interactiva de Swagger UI:
 
 http://127.0.0.1:8000/docs
+```
 
-🧪 Tests
 
-Ejecutar los tests con:
+## 🧪 Tests
+
+2. **Los tests están implementados con pytest.**
+Para ejecutarlos:
+
+```bash
+os tests están implementados con pytest.
+Para ejecutarlos:
 
 pytest
 
 
-Incluye tests básicos para comprobar:
+Incluyen casos básicos como:
 
-Listado de tareas vacío
+Obtener tareas cuando no hay ninguna
 
-Creación correcta de tareas
+Crear una tarea correctamente
+```
 
-🎯 Objetivo del proyecto
+---
 
-Proyecto enfocado exclusivamente al aprendizaje y a reforzar buenas prácticas en:
+##🎯 Objetivo del proyecto
+
+Este proyecto es de aprendizaje y práctica, orientado a reforzar:
 
 Diseño de APIs REST
 
-Organización de proyectos backend
+Organización de proyecto backend
 
 Validación de datos
 
-Testing básico
+Testing automatizado básico
 
-No pretende ser un producto final ni usar base de datos real.
-
-📌 Estado del proyecto
-
-✅ Finalizado
-🧩 Proyecto de aprendizaje backend
+No está pensado para producción.
