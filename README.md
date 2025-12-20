@@ -28,13 +28,13 @@ Proyecto enfocado en estructura clara, validación de datos y tests automatizado
 Tasks_API/
 ├── main.py
 ├── routers/
-│ └── tasks.py
+│     └── tasks.py
 ├── models/
-│ └── task.py
+│     └── task.py
 ├── db/
-│ └── fake_db.py
+│     └── fake_db.py
 ├── tests/
-│ └── test_tasks.py
+│     └── test_tasks.py
 ├── requirements.txt
 └── README.md
 </pre>
