@@ -82,10 +82,14 @@ pip install -r requirements.txt
 ### 4️⃣ Ejecutar la API
 ```bash
 uvicorn main:app --reload
+```
 
+```bash
 La API estará disponible en:
 http://127.0.0.1:8000
+```
 
+```bash
 Swagger UI:
 http://127.0.0.1:8000/docs
 ```
