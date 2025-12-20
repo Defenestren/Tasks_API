@@ -86,11 +86,11 @@ http://127.0.0.1:8000/docs
 ---
 
 ### 🧪 Tests
-```bash
+
 Tests implementados con pytest.
 Ejecutar tests:
 pytest
-```
+
 Casos cubiertos:
 
 API sin tareas iniciales
