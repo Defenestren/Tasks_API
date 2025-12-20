@@ -62,10 +62,14 @@ cd Tasks_API
 ### 2️⃣ Crear y activar entorno virtual
 ```bash
 python -m venv venv
+```
 
+```bash
 Windows
 venv\Scripts\activate
+```
 
+```bash
 Linux / macOS
 source venv/bin/activate
 ```
