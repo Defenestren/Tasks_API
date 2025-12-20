@@ -109,7 +109,7 @@ Crear una tarea correctamente
 
 ---
 
-##🎯 Objetivo del proyecto
+## 🎯 Objetivo del proyecto
 
 Este proyecto es de aprendizaje y práctica, orientado a reforzar:
 
