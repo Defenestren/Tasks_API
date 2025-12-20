@@ -100,7 +100,9 @@ http://127.0.0.1:8000/docs
 
 Tests implementados con pytest.
 Ejecutar tests:
+```bash
 pytest
+```
 
 Casos cubiertos:
 
