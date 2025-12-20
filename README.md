@@ -24,6 +24,7 @@ Proyecto enfocado en estructura clara, validación de datos y tests automatizado
 
 ## 🗂️ Estructura del proyecto
 
+<pre>
 Tasks_API/
 ├── main.py
 ├── routers/
@@ -36,6 +37,8 @@ Tasks_API/
 │ └── test_tasks.py
 ├── requirements.txt
 └── README.md
+</pre>
+
 ---
 
 ## 🛠️ Tecnologías utilizadas
